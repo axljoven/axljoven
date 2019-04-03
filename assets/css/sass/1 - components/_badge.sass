@@ -1,0 +1,24 @@
+//
+// Badge ==================================================
+//
+    
+.badge
+    display: inline-block
+    background-color: $c-secondary
+    border-radius: 100px
+    margin-right: 5px
+    margin-bottom: 5px
+    transition: all .2s
+
+    &:last-item
+        margin-right: 0
+
+    &:hover
+        transform: translateY(-3px)
+        box-shadow: 0px 3px 1px rgba(0,0,0,.05)
+
+    a
+        color: white
+        display: inline-block
+        padding: 8px 15px
+        font-size: .7rem

@@ -1,0 +1,72 @@
+// 
+// Main Header ============================================
+// 
+
+.site-header
+    position: relative
+    height: 100%
+
+
+// 
+// Logo
+// 
+
+.logo
+    width: 100%
+    margin-bottom: 20px
+
+
+// 
+// Site Menu
+// 
+
+.site-menu
+    list-style: none
+    padding: 0
+
+    &-item
+        text-align: right
+        & > a
+            display: inline-block
+            padding: 10px 0
+            font-weight: $font-regular
+            transition: all .2s
+        &:hover a
+            padding-right: 10px
+
+    &-item:last-child
+        margin-bottom: 0
+
+
+// 
+// Social Icons
+// 
+
+.social-icons
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: flex-end
+    align-items: center
+    align-content: stretch
+
+    position: absolute
+    width: 100%
+    bottom: 0
+    padding: 0
+    list-style: none
+
+    &-item
+        transition: all .2s
+
+        a
+            display: flex
+            align-items: center
+            justify-content: center
+            padding: 10px
+
+            & > .icon
+                font-size: 2rem
+
+        &:hover
+            transform: translateY(-4px)

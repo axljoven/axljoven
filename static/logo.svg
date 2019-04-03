@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="52 50 196.601 196.476">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4, .cls-6 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #f1f1f1;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 4px;
+      }
+
+      .cls-2, .cls-4 {
+        stroke: #363636;
+      }
+
+      .cls-3 {
+        fill: #363636;
+        font-size: 35px;
+        font-family: PlayfairDisplay-Black, Playfair Display;
+        font-weight: 800;
+      }
+
+      .cls-4 {
+        stroke-width: 0.5px;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="logo" transform="translate(0 -24)">
+    <g id="logo-border-shadow" class="cls-1" transform="translate(52 80.497)">
+      <rect class="cls-5" width="189.98" height="189.98"/>
+      <rect class="cls-6" x="2" y="2" width="185.98" height="185.98"/>
+    </g>
+    <g id="logo-border" class="cls-2" transform="translate(58.621 74)">
+      <rect class="cls-5" width="189.98" height="189.98"/>
+      <rect class="cls-6" x="2" y="2" width="185.98" height="185.98"/>
+    </g>
+    <text id="axl" class="cls-3" transform="translate(95 179)"><tspan x="0" y="0">axl</tspan></text>
+    <line id="line-right" class="cls-4" x2="59" transform="translate(187.5 216.5)"/>
+    <text id="joven." class="cls-3" transform="translate(96 219)"><tspan x="0" y="0">joven.</tspan></text>
+  </g>
+</svg>

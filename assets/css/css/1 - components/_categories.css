@@ -1,0 +1,6 @@
+.categories {
+  list-style: none; }
+  .categories .category {
+    float: left;
+    display: inline-block;
+    margin-right: 10px; }
