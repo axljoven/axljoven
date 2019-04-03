@@ -28,11 +28,16 @@
         text-align: right
         & > a
             display: inline-block
-            padding: 10px 0
+            padding: 5px 0
+            margin-bottom: 5px
             font-weight: $font-regular
-            transition: all .2s
-        &:hover a
-            padding-right: 10px
+            transition: all .3s
+        &:hover > a
+            padding-right: 15px
+            padding-left: 15px
+            color: white
+            // font-weight: $font-bold
+            background-color: $c-accent
 
     &-item:last-child
         margin-bottom: 0
@@ -66,7 +71,10 @@
             padding: 10px
 
             & > .icon
+                transition: all .2s
                 font-size: 2rem
 
         &:hover
             transform: translateY(-4px)
+            a > .icon
+                color: $c-accent
