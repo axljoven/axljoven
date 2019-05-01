@@ -142,6 +142,39 @@ p {
   margin-bottom: 10px;
   padding: 0; }
 
+.button {
+  display: inline-block;
+  padding: 10px 25px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  position: relative;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s; }
+  .button-bordered {
+    position: relative;
+    background: none;
+    border: 2px solid #363636; }
+    .button-bordered:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: -4px;
+      left: -4px;
+      right: 0;
+      -webkit-transform: translate(-2px, 2px);
+      -ms-transform: translate(-2px, 2px);
+      transform: translate(-2px, 2px);
+      -webkit-transition: all .2s;
+      -o-transition: all .2s;
+      transition: all .2s;
+      border: 2px solid #e2e2e2;
+      z-index: -1; }
+    .button-bordered:hover {
+      background-color: #363636;
+      color: white; }
+
 .badge {
   display: inline-block;
   margin-right: 5px;
@@ -150,7 +183,7 @@ p {
   -o-transition: all .2s;
   transition: all .2s; }
   .badge a {
-    background-color: #E2E2E2;
+    background-color: #c9c9c9;
     color: white;
     display: inline-block;
     padding: 8px 15px;
@@ -183,3 +216,36 @@ p {
     border-left: 1px solid #E2E2E2;
     width: 100%;
     overflow-y: scroll; }
+
+.blog-post .blog-list {
+  padding-top: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s; }
+  .blog-post .blog-list-title {
+    line-height: 15px;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: .9rem; }
+  .blog-post .blog-list-meta {
+    font-size: .7rem; }
+  .blog-post .blog-list:hover {
+    padding-left: 10px; }
+    .blog-post .blog-list:hover .blog-list-title {
+      color: #FF336B; }
+  .blog-post .blog-list:last-child {
+    border: none; }
+
+.blog-post .content h2, .blog-post .content h3, .blog-post .content h4, .blog-post .content h5, .blog-post .content h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+.blog-post .content p {
+  margin-bottom: 40px; }

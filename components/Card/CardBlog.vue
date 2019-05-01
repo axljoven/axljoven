@@ -17,7 +17,6 @@
 
             <!-- Categories -->
             <template v-if="data.categories.length > 0">
-                <!-- <p>Categories</p> -->
                 <Categories :list="data.categories" />
             </template>
         </div>

@@ -22,3 +22,60 @@
         border-left: 1px solid $c-secondary
         width: $right-section-width
         overflow-y: scroll
+
+
+//
+// Home page
+//
+
+.page-home
+    .section
+
+
+
+
+//
+// Single Blog Post
+//
+
+.blog-post
+
+    //
+    // Sidebar: Recent blogs
+    //
+
+    .blog-list
+        padding-top: 12px
+        padding-bottom: 8px
+        border-bottom: 1px solid rgba(0,0,0,.06)
+        transition: all .2s
+
+        &-title 
+            line-height: 15px
+            transition: all .2s
+            font-family: $font-secondary
+            font-weight: $font-regular
+            font-size: .9rem
+        &-meta
+            font-size: .7rem
+
+        &:hover
+            padding-left: 10px
+            .blog-list-title
+                color: $c-accent
+
+        &:last-child
+            border: none
+
+    //
+    // Content
+    //
+
+    .content
+        h2, h3, h4, h5, h6
+            font-family: $font-secondary
+            font-weight: $font-regular
+            margin-top: 40px
+            margin-bottom: 40px
+        p
+            margin-bottom: 40px

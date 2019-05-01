@@ -1,0 +1,38 @@
+//
+// Buttons
+//
+
+.button
+    display: inline-block
+    padding: 10px 25px
+    font-family: $font-main
+    font-weight: $font-bold
+    position: relative
+    transition: all .2s
+
+    &-bordered
+        position: relative
+        background: none
+        border: 2px solid $c-main
+
+        &:before
+            content: ''
+            display: block
+            position: absolute
+            top: 0
+            bottom: -4px
+            left: -4px
+            right: 0
+            transform: translate(-2px, 2px)
+            transition: all .2s
+            border: 2px solid #e2e2e2
+            z-index: -1
+
+        &:hover
+            background-color: $c-main
+            color: white
+            // transform: translate(2px, -2px)
+
+            // &:before
+            //     transform: translate(-4px, 4px)
+            

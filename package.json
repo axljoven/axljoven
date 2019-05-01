@@ -19,6 +19,7 @@
     "cross-env": "^5.2.0",
     "fs": "0.0.1-security",
     "markdown-parse": "^0.2.1",
+    "masonry-layout": "^4.2.2",
     "nuxt": "^2.4.0"
   },
   "devDependencies": {

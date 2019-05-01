@@ -18,18 +18,20 @@
             <!-- Sidebar -->
             <div class="sidebar w-1/3 mx-12">
                 <!-- Date -->
-                <p class="mb-10"><span>Posted on</span> <br/>{{ blog.posted_on }}</p>
+                <p class="mb-10"><span class="font-bold">Posted on</span> <br/>{{ blog.posted_on }}</p>
 
                 <!-- Categories -->
-                <template v-if="blog.categories.length > 0">
-                    <p>Categories</p>
+                <div v-if="blog.categories.length > 0" class="mb-10">
+                    <p class="font-bold mb-2">Categories</p>
                     <Categories :list="blog.categories" />
-                </template>
+                </div>
 
                 <!-- Recent Blogs -->
-                <template>
-                    {{ latest }}
-                </template>
+                <div class="mb-10" v-if="latest.length > 0">
+                    <p class="font-bold mb-2">Recent Blog Posts</p>
+                    <ListBlog v-for="(blog, id) in latest" :key="id" :data="blog" />
+                </div>
+
             </div> <!-- sidebar -->
         </div> <!-- flex -->
 
@@ -38,12 +40,13 @@
 
 <script>
 import Categories from '~/components/Categories'
+import ListBlog from '~/components/List/ListBlog'
 import blogs from '~/data/models/blogs.js'
 import helpers from '~/mixins/mixins.js'
 
 export default {
     name: "Blog",
-    components: { Categories },
+    components: { Categories, ListBlog },
     
     //
     // Validate if slug is valid
@@ -59,6 +62,7 @@ export default {
     //
 
     asyncData ({ params }, callback) {
+        // Get blog post with the matched slug
         let blog = blogs.get(params.slug)
 
         if (blog) {

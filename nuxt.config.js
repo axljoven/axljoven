@@ -17,6 +17,10 @@ export default {
 			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
 			{ rel: 'stylesheet', href: 'https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css' },
 			{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Playfair+Display:900' },
+		],
+		script : [
+			{ src: 'https://code.jquery.com/jquery-3.3.1.js' },
+			{ src: 'js/main.js' }
 		]
 	},
 
@@ -25,6 +29,7 @@ export default {
 	*/
 	loading: { color: '#fff' },
 
+	
 	/*
 	** Global CSS
 	*/
@@ -32,6 +37,7 @@ export default {
 		'~/assets/css/tailwind.css',
 		'~/assets/css/main.css',
 	],
+
 
 	/*
 	** Plugins to load before mounting the App
